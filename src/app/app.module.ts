@@ -11,7 +11,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { NewsArticleComponent } from './news-article/news-article.component';
 import { NewsEditComponent } from './news-edit/news-edit.component';
 import { NewsListComponent } from './news-list/news-list.component';
 import { NewsAddComponent } from './news-add/news-add.component';
@@ -22,7 +21,6 @@ import { FormComponent } from './form/form.component';
 
 const AppRoutes: Routes = [
   {path: '', component: NewsListComponent, data: { title: 'Source name' }},
-  {path: 'news-article/:id', component: NewsArticleComponent, data: { title: 'Source name' }},
   {path: 'news-edit/:id', component: NewsEditComponent, data: { title: 'Edit' }},
   {path: 'news-add', component: NewsAddComponent, data: { title: 'Add' }},
 ]
@@ -33,7 +31,6 @@ const AppRoutes: Routes = [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NewsArticleComponent,
     NewsEditComponent,
     NewsListComponent,
     NewsAddComponent,
