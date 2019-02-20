@@ -1,0 +1,10 @@
+.footer {
+  background-color: $c-black;
+  padding: 15px 0;
+
+
+  &-copyright {
+    font-size: $font-size-xs;
+    color: $c-white;
+  }
+}
