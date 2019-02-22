@@ -2,7 +2,7 @@
 import { NewsFilterPipe } from './news-filter.pipe';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Router, Routes, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -41,6 +41,7 @@ const AppRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
+    Router,
     RouterModule.forRoot(AppRoutes),
     HttpClientModule,
     ReactiveFormsModule
@@ -48,4 +49,5 @@ const AppRoutes: Routes = [
   providers: [NewsDataService],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

@@ -1,6 +1,8 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, NgModule, OnInit, Output} from '@angular/core';
 import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
 import {NewsDataService} from '../news-data.service';
+import { RouterTestingModule } from '@angular/router/testing';
+
 
 
 @Component({
@@ -8,6 +10,13 @@ import {NewsDataService} from '../news-data.service';
   templateUrl: './news-add.component.html',
   styleUrls: ['./news-add.component.scss']
 })
+
+@NgModule({
+  imports: [
+    RouterTestingModule
+  ],
+})
+
 export class NewsAddComponent implements OnInit {
 
   constructor() { }

@@ -1,6 +1,6 @@
-import {Component, EventEmitter, OnInit, Output, Input} from '@angular/core';
-import {FormBuilder, FormControl, NgForm, Validators} from '@angular/forms';
-import { Router } from '@angular/router';
+import {Component, EventEmitter, OnInit, Output, Input, NgModule} from '@angular/core';
+import {FormBuilder, FormsModule, FormControl, NgForm, Validators, ReactiveFormsModule } from '@angular/forms';
+import { RouterTestingModule } from '@angular/router/testing';
 import {NewsDataService} from '../news-data.service';
 
 
@@ -9,9 +9,18 @@ import {NewsDataService} from '../news-data.service';
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.scss']
 })
+
+@NgModule({
+  imports: [
+    RouterTestingModule,
+    FormsModule,
+    ReactiveFormsModule
+  ],
+})
+
 export class FormComponent implements OnInit {
 
-  constructor(private fb: FormBuilder, private newsDataService: NewsDataService, private router: Router) { }
+  constructor(private fb: FormBuilder, private newsDataService: NewsDataService, private router: RouterTestingModule) { }
 
   @Output() addNews = new EventEmitter<any>();
 
@@ -30,7 +39,7 @@ export class FormComponent implements OnInit {
   });
 
   cancel() {
-    this.router.navigate(['']);
+    //this.router.navigate(['']);
   }
 
   addArticle(form: NgForm) {

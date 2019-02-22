@@ -22,20 +22,6 @@ export class NewsItemComponent implements OnInit {
     this.remove.emit({article: this.article});
   }
 
-  setArticleValues(article) {
-    console.log(article);
-    /*this.articleFormGroup.setValue({
-      id: article.id,
-      title: article.title,
-      author: article.author,
-      publishedAt: article.publishedAt,
-      url: article.url,
-      urlToImage: article.urlToImage,
-      description: article.description,
-      content: article.content
-    });*/
-  }
-
   ngOnInit() {
   }
 

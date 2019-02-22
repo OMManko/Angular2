@@ -48,7 +48,7 @@ export class NewsDataService {
       "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/s--Nz39jFw0--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/iw5rtjdtuk6nicrkhsf0.jpg",
       "description": "The family of Jussie Smollettthe Empire actor who was hospitalized this week after being subjected to a violent",
       "content": "A crypto company claims it is offering the fastest Bitcoin transfer in the world after adding a brand-new service to its crypto wallet. SovereignWallet says its platform offers banking-grade features to protect user assets, all the while ensuring that comple… [+3819 chars]"
-    },
+    }
   ];
 
   model: any = {};

@@ -1,12 +1,21 @@
-import {Component, OnInit, Output, EventEmitter, Input, ViewChild} from '@angular/core';
+import {Component, OnInit, Output, EventEmitter, Input, ViewChild, NgModule} from '@angular/core';
 import {NewsDataService} from '../news-data.service';
 import {ApiNewsDataService} from '../api-news-data.service';
 import {forEach} from "../../../node_modules/@angular/router/src/utils/collection";
+import { HttpClient } from '@angular/common/http';
+import { RouterTestingModule } from '@angular/router/testing';
 
 @Component({
   selector: 'app-news-list',
   templateUrl: './news-list.component.html',
   styleUrls: ['./news-list.component.scss']
+})
+
+@NgModule({
+  imports: [
+    HttpClient,
+    RouterTestingModule
+  ]
 })
 
 export class NewsListComponent implements OnInit {
