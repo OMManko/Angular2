@@ -56,29 +56,16 @@ export class NewsDataService {
   public newArticle;
 
 
-  get(): NewsDataService[] {
+  get() {
     return this.newsListData;
   }
 
   add(article: Article) {
     article.id = this.newsListData.length;
-    this.newsListData.push(article);
+    this.newsListData.push(new Article(article));
     console.log(this.newsListData);
     return this.newsListData;
   }
-
-  put(id: number, values: Object = {} ): Article {
-    const updatedArticle = this.newsListData.filter( article => article.id === id ).pop();
-
-    if ( !updatedArticle ) {
-      return null;
-    }
-
-    Object.assign( updatedArticle, values );
-
-    return updatedArticle;
-  }
-
 
   delete(id: number): NewsDataService {
       this.newsListData = this.newsListData.filter( article => article.id !== id );

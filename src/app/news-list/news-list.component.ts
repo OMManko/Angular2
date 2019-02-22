@@ -58,8 +58,6 @@ export class NewsListComponent implements OnInit {
       );
   }
 
-  loadMore() {
-  }
 
   showSelectedSourceNews(source) {
     this.apiNewsService.getNewsBySource(source)
