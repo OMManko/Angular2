@@ -1,8 +1,8 @@
-import {Component, EventEmitter, OnInit, Output, Input, NgModule} from '@angular/core';
-import {FormBuilder, FormsModule, FormControl, NgForm, Validators, ReactiveFormsModule } from '@angular/forms';
+import { Component, EventEmitter, OnInit, Output, Input, NgModule } from '@angular/core';
+import { FormBuilder, FormsModule, FormControl, NgForm, Validators, ReactiveFormsModule } from '@angular/forms';
 import { RouterTestingModule } from '@angular/router/testing';
 import { Router } from '@angular/router';
-import {NewsDataService} from '../news-data.service';
+import { NewsDataService } from '../news-data.service';
 
 
 @Component({
