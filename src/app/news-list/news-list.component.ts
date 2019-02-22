@@ -99,12 +99,9 @@ export class NewsListComponent implements OnInit {
     }
   }
 
-  removeNews(event: object) {
+  updateNews(event: object) {
     this.getLocalNews();
   }
 
-  addNews(event: object) {
-    this.getLocalNews();
-  }
 }
 

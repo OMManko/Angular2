@@ -32,7 +32,7 @@
         <input type="text" class="form-control" id="url" name="url" formControlName="url" required>
       </div>
       <button type="button" class="btn btn-primary" [disabled]="!articleFormGroup.valid" (click)="addArticle(form)">Save</button>
-      <button type="button" class="btn btn-danger" (click)="cancel()">Cancel</button>
+      <button type="button" class="btn btn-danger" [routerLink]="['/']">Cancel</button>
     </div>
   </div>
 </form>

@@ -40,9 +40,6 @@ export class FormComponent implements OnInit {
     url: new FormControl()
   });
 
-  cancel(): void {
-    this.router.navigate(['']);
-  }
 
   addArticle(form: NgForm) {
     if (this.articleFormGroup.valid) {
